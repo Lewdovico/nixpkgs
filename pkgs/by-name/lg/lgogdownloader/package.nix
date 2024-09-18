@@ -35,7 +35,6 @@ stdenv.mkDerivation rec {
     cmake
     pkg-config
     help2man
-    html-tidy
   ] ++ lib.optional enableGui libsForQt5.wrapQtAppsHook;
 
   buildInputs =
@@ -43,6 +42,7 @@ stdenv.mkDerivation rec {
       boost
       curl
       htmlcxx
+      html-tidy
       jsoncpp
       liboauth
       rhash
